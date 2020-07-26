@@ -1,2 +1,73 @@
 # PowerPoleDist
-An Anderson PowerPole DC power distribution box
+An Anderson PowerPole DC power distribution box.
+
+# What is this thing?
+
+Amateur radio hobbyists (among others) have lots of electronic gear running off of 12 VDC, and to keep the wiring a little cleaner, many of them use PowerPole connectors from Anderson Power Products. These handy little connectors can handle up to 45 amps, and have become a defacto standard.
+
+One of the common accessories is a power breakout, basically a “power strip” for these 12 V connections. These are available from several vendors for under $100, but I wanted some slightly different features (namely, right-angle connectors), so I designed my own.
+
+# What does it take to build one?
+
+This design consists of:
+A custom circuit board that you can (design files provided)
+Electronic components that you can order from most suppliers (I used Digikey)
+A few harder-to-get components (the power connectors) available from more specialized shop (I used Powerwerx)
+An aluminum case that you can order from a place like SendCutSend (design files provided)
+Some spacers and bolts and such that you can order from a mechanical parts supplier (I used McMaster-Carr)
+ 
+It takes some through-hole soldering and some assembly, but the largest issue with the design is the shipping costs and one-time costs for the custom parts. The parts cost is around $30 per system, but you would spend more than 3x that if you ordered just one of these, since you’re buying parts from five different vendors.
+
+As a result, I think this design is most useful for someone building several for all their ham friends, or someone who is looking for a design to modify or extend.
+
+# Ordering Components
+
+(this section needs more info)
+
+##  PCB files
+
+The PCB files are in the PCB/gerbers directory. You should be able to use the zip file as-is for most PCB manufacturers. You might want to [check for any github issues](https://github.com/zeroping/PowerPoleDist/issues) before you order.
+
+## Components
+
+A reasonable parts list is available in 
+
+You can order all of these parts [from Digi-Key using this cart link] (https://www.digikey.com/short/zb19f1), but you may want to order the (Anderson PowerPole parts from Powerwerx](https://powerwerx.com/anderson-power-powerpole-sb-connectors) to get better prices.
+
+## Case
+The case can be ordered by uploading the files in the Mechanical directory to a place like [SendCutSend](https://sendcutsend.com/), in one of their 0.063” / 1.6 mm materials. I used their [5052 Aluminum](https://sendcutsend.com/aluminum/), and these are tight-fit parts, so you might want to adjust the files a tad for other materials. Be aware that they currently have a $29 minimum per material, so either order more than one, or see what else you want to get cut from metal.
+
+There are also some M3 screws, spacers, and nuts that hold the whole thing together. I ordered these from [McMaster-Carr](https://www.mcmaster.com/), but they all come in packs of 100 – you wanted to build 25 of these, right?
+
+# Assembly
+Start by putting the right-angle contacts into the Anderson PowerPole housings, and slotting the red and black housings side by side. Be sure to check which side the red goes on!
+
+Next, solder the high-current components into the board: the PowerPole contacts, and the fuse holders. These will all take a bit of heat from your soldering iron due to the large traces, and will take lots of solder. I haven’t managed to use too much solder yet. The fuse holders particularly don’t like to wick solder to their surfaces without enough solder on them.
+
+I recommend using some clever supporting on a heat-resistant surface to get all of these parts held in place while you solder them. You especially want to make sure the PowerPole contacts aren’t in crooked.
+
+Then, solder all of the smaller through-hole components. This should be relatively straight forward.
+
+The LEDs can be soldered directly on the board, or you can raise them up to get them to poke through the top of the case. If you raise them up, I recommend measuring and cutting 10 little scraps of wire insulation, and using that wire insulation to get the LEDs at the right height.
+
+Decide if you want the LEDs to be on all the time, or just when you press the fuse check button. If you want them on all the time, short JP1 with some solder. Be aware, the current-limiting resistors for the LEDs were chosen to be pretty bright, so you might choose larger resistances for R1-R10 if you want them on all the time.
+
+Also decide if you want the case connected to GND. If you do, then short jumper JP101 with some solder. I don’t recommend it, as the fuses will probably short 12V to the case if you decided to unplug one of them while the system is powered.
+
+Next, start assembling the case. Start by threading the ‘front’ panel down between the PowerPole housings. This panel is just barely not reversible – the PowerPole housings are slight off-center and closer to the end of the board with the tactile switch. Add that to the list of fixes for the next version!
+
+Once you have the front panel in place, you can put the top on, threading the LEDs in place as as you go. You can start to fit the front panel into the top by tapping it gently with a hammer. This aluminum will bend if you’re not careful, but it makes for a satisfyingly tight fit when it goes together.
+
+This is now your last chance to check everything over and put the spacers in before you finish assembling the case. The taller spacer go on the top of the board, and the shorter ones go below, so put those in place, and thread the long M3 screws through the case top, the spacers, and PCB. From this point on, you will want to leave the M3 screws in place to keep the spacers lined up. You might want to  put the nuts on for now to hold them in place.
+
+Now, add the case back and sides. Again, you might want to use a hammer to tap them in. Use a board edge or something to let you put the top against a firm surface, since there are now M3 screw heads sticking out of the top.
+
+At this point, you can take the M3 nuts back off and add the case bottom. You might want to again thread the M3 nuts on to hold the screws in place while you tap the aluminum together.
+
+Once you get the case all slotted together, you can try adding rubber feet. The ones I found don’t fit perfectly, but they squish just enough to let these nuts thread on to the M3 screw. I have found that squishing the feet (with nuts in place) just a little bit helps me get it started, and after that, the nuts seem to lock in place enough to let you tighten them. I’d like to have better feet, but these are the best ones I’ve found that are cheap.
+
+# Reuse of this design
+
+I want this design to be open for anyone to use. If you’re selling them for a profit, give me some attribution and link to this git repo. If you’re selling more than 100, let me know.
+
+I’ll work on picking a proper license at some point, but for now, just be reasonable.
