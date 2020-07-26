@@ -14,6 +14,8 @@ It can handle at least 30 amps, but past that, you might want to order the PCB w
 
 This design is as open as I can easily make it, so if you want to change something, add something, etc, you can. The one catch is that I don't have the full 3D models for the case published (license issues), but I do have the resulting 2D shapes, so you can order your own case or make simple modifications.
 
+The documentation should be viewable in [a pretty format on Github Pages](https://zeroping.github.io/PowerPoleDist/), or [directly in the GitHub project directory along side all the source files](https://github.com/zeroping/PowerPoleDist).
+
 ## What does it take to build one?
 
 This design consists of:
@@ -23,7 +25,7 @@ This design consists of:
 - An aluminum case that you can order from a place like SendCutSend (design files provided)
 - Some spacers and bolts and such that you can order from a mechanical parts supplier (I used McMaster-Carr)
  
-It takes some through-hole soldering and some assembly, but the largest issue with the design is the shipping costs and one-time costs for the custom parts. The parts cost is around $30 per system, but you would spend more than 3x that if you ordered just one of these, since you’re buying parts from five different vendors.
+It takes some through-hole soldering and some assembly, but the largest issue with the design is the shipping costs and one-time costs for the custom parts. The parts cost is around $30 per system, but you could easily spend three times that if you ordered just one of these, since you’re buying and shipping parts from five different vendors.
 
 As a result, I think this design is most useful for someone building several for all their amateur radio friends, or someone who is looking for a design to modify or extend.
 
@@ -33,8 +35,7 @@ As a result, I think this design is most useful for someone building several for
 
 The PCB production files are in the PCB/gerbers directory. You should be able to use the zip file as-is for most PCB manufacturers. I recommend the wonderful [PCB Shopper](https://pcbshopper.com/) to price-compare for a 2-layer, 40 x 130mm board. You might want to [check for any github issues](https://github.com/zeroping/PowerPoleDist/issues) before you order.
 
-<img src="https://github.com/zeroping/PowerPoleDist/raw/master/Docs/PCB_Layout_v1_1.png" alt="PCB layout" width="69%"/>
-<img src="https://github.com/zeroping/PowerPoleDist/raw/master/Docs/PCB_Schematic_v1_1.png" alt="schematic" width="30%"/>
+<img src="https://github.com/zeroping/PowerPoleDist/raw/master/Docs/PCB_Layout_v1_1.png" alt="PCB layout" width="69%"/><img src="https://github.com/zeroping/PowerPoleDist/raw/master/Docs/PCB_Schematic_v1_1.png" alt="schematic" width="30%"/>
 
 The original PCB design files are in the [PCB directory](https://github.com/zeroping/PowerPoleDist/tree/master/PCB). It's designed in the open-source PCB design package [KiCad](https://kicad-pcb.org/).
 
@@ -45,6 +46,8 @@ A reasonable list of the parts and costs [is available here](https://github.com/
 You can order all of these parts [from Digi-Key using this cart link] (https://www.digikey.com/short/zb19f1), but you may want to order the [Anderson PowerPole parts from Powerwerx](https://powerwerx.com/anderson-power-powerpole-sb-connectors) to get better prices. The links are also in [the parts list spreadsheet](https://github.com/zeroping/PowerPoleDist/raw/master/Docs/PowerPole_Distribution_Board_Costs.ods).
 
 You'll also want to add some [Mini/APM/ATM fuses](https://www.digikey.com/product-detail/en/eaton-bussmann-electrical-division/BK-ATM-30/283-2332-ND/264848) of whatever rating you want.
+
+They're not necessary or 100% perfect, but I've been using [these rubber feet on Amazon](https://www.amazon.com/gp/product/B07LCMS23S/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).
 
 <img src="https://github.com/zeroping/PowerPoleDist/raw/master/Docs/images/parts.jpg" alt="The finished design" width="100%"/>
 
@@ -70,7 +73,7 @@ I recommend using some clever supporting on a heat-resistant surface to get all 
 
 Then, solder all of the smaller through-hole components. This should be relatively straight forward.
 
-The LEDs can be soldered directly on the board, or you can raise them up to get them to poke through the top of the case. If you raise them up, I recommend measuring and cutting 10 little scraps of wire insulation, and using that wire insulation to get the LEDs at the right height.
+The LEDs can be soldered directly on the board, or you can raise them up to get them to poke through the top of the case. If you raise them up, I recommend measuring and cutting 10 little scraps of wire insulation, and using that wire insulation to get the LEDs at the right height. Since the PCB silkscreen isn't super clear, the flat side / short leg of the LED goes away from the PowerPoles.
 
 Decide if you want the LEDs to be on all the time, or just when you press the fuse check button. If you want them on all the time, short JP1 with some solder. Be aware, the current-limiting resistors for the LEDs were chosen to be pretty bright, so you might choose larger resistances for R1-R10 if you want them on all the time.
 
@@ -82,12 +85,13 @@ Next, start assembling the case. Start by threading the ‘front’ panel down b
 
 Once you have the front panel in place, you can put the top on, threading the LEDs in place as as you go. You can start to fit the front panel into the top by tapping it gently with a hammer. This aluminum will bend if you’re not careful, but it makes for a satisfyingly tight fit when it goes together.
 
-This is now your last chance to check everything over and put the spacers in before you finish assembling the case. The taller spacer go on the top of the board, and the shorter ones go below, so put those in place, and thread the long M3 screws through the case top, the spacers, and PCB. From this point on, you will want to leave the M3 screws in place to keep the spacers lined up. You might want to  put the nuts on for now to hold them in place.
-
-<img src="https://github.com/zeroping/PowerPoleDist/raw/master/Docs/images/stackup.jpg" alt="M3 screw stackup" width="100%"/>
 <img src="https://github.com/zeroping/PowerPoleDist/raw/master/Docs/images/casetwosides.jpg" alt="case assembly" width="100%"/>
 
-Now, add the case back and sides. Again, you might want to use a hammer to tap them in. Use a board edge or something to let you put the top against a firm surface, since there are now M3 screw heads sticking out of the top.
+This is now your last chance to check everything over and put the spacers in before you finish assembling the case. The taller spacers go on the top of the board, and the shorter ones go below, so put those in place, and thread the long M3 screws through the case top, the spacers, and PCB. From this point on, you will want to leave the M3 screws in place to keep the spacers lined up. You might want to  put the nuts on for now to hold them in place. It is quite annoying to have to disassemble the case to re-position a spacer.
+
+<img src="https://github.com/zeroping/PowerPoleDist/raw/master/Docs/images/stackup.jpg" alt="M3 screw stackup" width="100%"/>
+
+Now, add the case back and sides. Again, you might want to use a hammer to tap them in. Use a board edge or something to let you put the "top" against a firm, flat surface, since there are now M3 screw heads sticking out of the top.
 
 <img src="https://github.com/zeroping/PowerPoleDist/raw/master/Docs/images/casefivesides.jpg" alt="case assembly" width="100%"/>
 
