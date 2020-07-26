@@ -7,6 +7,10 @@ Amateur radio hobbyists (among others) have lots of electronic gear running off 
 
 One of the common accessories is a power breakout, basically a “power strip” for these 12 V connections. These are available from several vendors for under $100, but I wanted some slightly different features (namely, right-angle connectors), so I designed my own.
 
+
+<img src="https://github.com/zeroping/PowerPoleDist/raw/master/Docs/images/finished.jpg" alt="The finished design" width="50%"/>
+
+
 # What does it take to build one?
 
 This design consists of:
