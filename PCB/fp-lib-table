@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Connector_Anderson)(type KiCad)(uri ${KIPRJMOD}/Connector_Anderson.pretty)(options "")(descr ""))
+  (lib (name Fuse)(type KiCad)(uri /home/scott/projects/PowerPoleDist/kicad-footprints/Fuse.pretty)(options "")(descr ""))
+)
