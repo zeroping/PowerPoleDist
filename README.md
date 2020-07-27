@@ -19,7 +19,7 @@ The documentation should be viewable in [a pretty format on Github Pages](https:
 ## What does it take to build one?
 
 This design consists of:
-- A custom circuit board that you can (design files provided)
+- A custom circuit board that you can order online (design files provided)
 - Electronic components that you can order from most suppliers (I used Digikey)
 - A few harder-to-get components (the power connectors) available from more specialized shop (I used [Powerwerx](https://powerwerx.com/anderson-power-powerpole-sb-connectors))
 - An aluminum case that you can order from a place like SendCutSend (design files provided)
@@ -110,3 +110,11 @@ Github has a way to handle [reporting issues](https://github.com/zeroping/PowerP
 I want this design to be open for anyone to use for hobbiest use. If you’re selling them for a profit, give me some attribution and link to this git repo. If you’re selling more than 100 for a profit, let me know - I will probably still be ok with it.
 
 I’ll work on picking a proper license at some point, but for now, just be reasonable.
+
+## Other references
+
+In the very least, I wanted to point out an (alternative PowerPole distribution board by Tyler Ward, M0UAV, over on hackaday.io)[https://hackaday.io/project/10489-powerpole-distribution-block]. His version uses the vertical PowerPole PCB terminals, and an acrylic case, but is otherwise very similar.
+
+I know there are a fair number of amateur radio users who are using 4-cell LiFePo4 batteries for portable DC power sources, so I'll also mention (Alex Klimaj's LiPow USB-C battery charger)[https://hackaday.io/project/161771-lipow-the-usb-c-lipo-battery-charger]. It doesn't support LiFePo4 chemistry right out of the box, but it's an interesting and unique design that I'm likely to use in the future for charging my home-built battery pack.
+
+If you have a related open hardware design, let me know, and I might add a link to it here.
