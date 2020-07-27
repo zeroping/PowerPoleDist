@@ -113,8 +113,8 @@ I’ll work on picking a proper license at some point, but for now, just be reas
 
 ## Other references
 
-In the very least, I wanted to point out an (alternative PowerPole distribution board by Tyler Ward, M0UAV, over on hackaday.io)[https://hackaday.io/project/10489-powerpole-distribution-block]. His version uses the vertical PowerPole PCB terminals, and an acrylic case, but is otherwise very similar.
+In the very least, I wanted to point out an [alternative PowerPole distribution board by Tyler Ward, M0UAV, over on hackaday.io](https://hackaday.io/project/10489-powerpole-distribution-block). His version uses the vertical PowerPole PCB terminals, and an acrylic case, but is otherwise very similar.
 
-I know there are a fair number of amateur radio users who are using 4-cell LiFePo4 batteries for portable DC power sources, so I'll also mention (Alex Klimaj's LiPow USB-C battery charger)[https://hackaday.io/project/161771-lipow-the-usb-c-lipo-battery-charger]. It doesn't support LiFePo4 chemistry right out of the box, but it's an interesting and unique design that I'm likely to use in the future for charging my home-built battery pack.
+I know there are a fair number of amateur radio users who are using 4-cell LiFePo4 batteries for portable DC power sources, so I'll also mention [Alex Klimaj's LiPow USB-C battery charger](https://hackaday.io/project/161771-lipow-the-usb-c-lipo-battery-charger). It doesn't support LiFePo4 chemistry right out of the box, but it's an interesting and unique design that I'm likely to use in the future for charging my home-built battery pack.
 
 If you have a related open hardware design, let me know, and I might add a link to it here.
