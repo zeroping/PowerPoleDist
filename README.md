@@ -37,7 +37,7 @@ The PCB production files are in the PCB/gerbers directory. You should be able to
 
 <img src="https://github.com/zeroping/PowerPoleDist/raw/master/Docs/PCB_Layout_v1_1.png" alt="PCB layout" width="69%"/><img src="https://github.com/zeroping/PowerPoleDist/raw/master/Docs/PCB_Schematic_v1_1.png" alt="schematic" width="30%"/>
 
-The original PCB design files are in the [PCB directory](https://github.com/zeroping/PowerPoleDist/tree/master/PCB). It's designed in the open-source PCB design package [KiCad](https://kicad-pcb.org/).
+The original PCB design files are in the [PCB directory](https://github.com/zeroping/PowerPoleDist/tree/master/PCB). It's designed in the open-source PCB design package [KiCad](https://kicad.org/).
 
 ### Components
 
